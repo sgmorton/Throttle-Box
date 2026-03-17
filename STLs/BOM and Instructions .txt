@@ -10,11 +10,12 @@ BOM
 
 --- Optional
 
-I included 2 holes 1 for a power jack 
-1 X DC Power Jack Socket https://www.amazon.com/dp/B08SJM2G52
+I included 2 holes 
+1 11mm for a power jack 
+ex. 1 X DC Power Jack Socket https://www.amazon.com/dp/B08SJM2G52
 
-1 for a switch
-1 X Round switch (I had some on hand but the hole I made was 20mm so any 20mm DC round switch should work like this one https://www.amazon.com/DaierTek-Listed-Switches-Automotive-KCD1-5Pack/dp/B07S1MV462?th=1)
+1 20mm for a switch 
+ex. 1 X Round switch (I had some on hand but the hole I made was 20mm so any 20mm DC round switch should work like this one https://www.amazon.com/DaierTek-Listed-Switches-Automotive-KCD1-5Pack/dp/B07S1MV462?th=1)
 
 -----
 
@@ -27,7 +28,11 @@ TIP: If you find the servo gear is slipping you may need to grind a small flat o
 
 I also had a bunch of M4s on hand, again a variety pack will work most of the holes are passthru so you can be generous on the length. 
 
-I am including a Video to show order of assembly. Yes the servo gear is very tight on the shaft intentionally. 
+I am including a Video to show order of assembly. 
+Yes the servo gear is very tight on the shaft intentionally. 
+-------------------------------------------------------------------------------
+I am using an Arduino ESP32 to control the servo. The code and latest STL files can be found here : https://github.com/sgmorton/Throttle-Box/tree/main/main
+
 
 
 
