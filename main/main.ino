@@ -6,6 +6,9 @@ const int servoPin = 18; // Connect to pin labeled D18 on your NodeMCU
 int minPulse = 1000; // Minimum pulse width (microseconds)
 int maxPulse = 1800; // Maximum pulse width (microseconds)
 
+int minWait = 8000;  // Minimum wait time (milliseconds)
+int maxWait = 25000; // Maximum wait time (milliseconds)
+
 int currentPos = minPulse;
 
 void setup() {
@@ -49,7 +52,7 @@ void loop() {
   moveWithEasing(currentPos, targetPos);
   currentPos = targetPos;
 
-  // Random wait between 8 and 25 seconds
-  long waitTime = random(8000, 25001); 
+  // Random wait between minWait and maxWait
+  long waitTime = random(minWait, maxWait + 1); 
   delay(waitTime);
 }
