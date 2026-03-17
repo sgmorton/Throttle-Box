@@ -2,11 +2,12 @@
 
 Servo myServo;
 const int servoPin = 18; // Servo Signal Pin
+const int ledPin = 2;   // Onboard LED Pin
 
 //pulse width, a random pulse width will be chosen between these two numbers
 //this is the lowest and highest servo position
-int minPulse = 1000; // Minimum pulse width (microseconds)
-int maxPulse = 1800; // Maximum pulse width (microseconds)
+int minPulse = 800; // Minimum pulse width (microseconds)
+int maxPulse = 1300; // Maximum pulse width (microseconds)
 
 //wait time between moves, a random time will be chosen between these two numbers
 int minWait = 8000;  // Minimum wait time (milliseconds)
@@ -25,6 +26,9 @@ void setup() {
   myServo.setPeriodHertz(50); 
   myServo.attach(servoPin, 500, 2400); 
   
+  pinMode(ledPin, OUTPUT);
+  digitalWrite(ledPin, LOW);
+
   myServo.writeMicroseconds(currentPos); // Start at midpoint
   Serial.println("System Ready. Starting in 5 seconds...");
   delay(5000);
@@ -44,10 +48,15 @@ void moveWithEasing(int start, int end) {
     
     int currentStep = start + (end - start) * easedT;
     myServo.writeMicroseconds(currentStep);
+    
+    // Rapid blink: Toggle LED every 50ms
+    digitalWrite(ledPin, (millis() / 50) % 2);
+
     Serial.println(currentStep); // Output for Plotter
     delay(15); 
   }
   myServo.writeMicroseconds(end); 
+  digitalWrite(ledPin, LOW); // Ensure LED is off after move
   Serial.println(end); 
 }
 
