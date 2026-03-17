@@ -1,16 +1,20 @@
 #include <ESP32Servo.h>
 
 Servo myServo;
-const int servoPin = 18; // Connect to pin labeled D18 on your NodeMCU
+const int servoPin = 18; // Servo Signal Pin
 
+//pulse width, a random pulse width will be chosen between these two numbers
+//this is the lowest and highest servo position
 int minPulse = 1000; // Minimum pulse width (microseconds)
 int maxPulse = 1800; // Maximum pulse width (microseconds)
 
+//wait time between moves, a random time will be chosen between these two numbers
 int minWait = 8000;  // Minimum wait time (milliseconds)
 int maxWait = 25000; // Maximum wait time (milliseconds)
 
-int moveDuration = 2000; // Time taken for each move (milliseconds)
+int moveDuration = 1000; // Time taken for each move (milliseconds)
 
+//initial position
 int currentPos = (minPulse + maxPulse) / 2; // Start at midpoint
 
 void setup() {

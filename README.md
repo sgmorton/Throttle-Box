@@ -17,7 +17,9 @@ An ESP32-based project to control a servo motor with smooth, randomized movement
 At the top of `main/main.ino`, you can adjust the following:
 - `minPulse`: Minimum pulse width (default 1000us).
 - `maxPulse`: Maximum pulse width (default 1800us).
-- Timing: Wait intervals are randomized between 8-25 seconds in the `loop()`.
+- `minWait`: Minimum wait time (default 8000ms).
+- `maxWait`: Maximum wait time (default 25000ms).
+- `moveDuration`: Duration of each transition (default 2000ms).
 
 ## Setup
 1. Open the project in the Arduino IDE.
