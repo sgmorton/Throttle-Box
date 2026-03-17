@@ -1,0 +1,33 @@
+BOM
+
+--- Required
+
+2 X Light Duty Mounted Ball Bearings with Two-Bolt Flange https://www.mcmaster.com/products/5913k61/
+1 X Rotary Shaft https://www.mcmaster.com/products/5947k13/
+1 X DS5160SSG 60kg Servo https://www.amazon.com/dp/B08HYX5SX3
+1 X 3/4" Aluminum Tube - I got mine at Lowes but any 3/4" OD Tube like this https://www.amazon.com/Tynulox-Aluminum-Seamless-Tube%EF%BC%8CMetal-Decoration/dp/B0BNQ4C2QL should work. 
+
+
+--- Optional
+
+I included 2 holes 1 for a power jack 
+1 X DC Power Jack Socket https://www.amazon.com/dp/B08SJM2G52
+
+1 for a switch
+1 X Round switch (I had some on hand but the hole I made was 20mm so any 20mm DC round switch should work like this one https://www.amazon.com/DaierTek-Listed-Switches-Automotive-KCD1-5Pack/dp/B07S1MV462?th=1)
+
+-----
+
+I had a bunch of various M4 heatset inserts already, if you don't have some this is the kit I bought ages ago. You will need a handful of these in the M4 variety.
+
+TIP: When setting the grub screws heatsets have the shaft/handle in place already to avoid going to deep. 
+
+TIP: If you find the servo gear is slipping you may need to grind a small flat or something the grub screw can get purchase on like some grooves. 
+
+
+I also had a bunch of M4s on hand, again a variety pack will work most of the holes are passthru so you can be generous on the length. 
+
+I am including a Video to show order of assembly. Yes the servo gear is very tight on the shaft intentionally. 
+
+
+
