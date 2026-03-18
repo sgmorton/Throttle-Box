@@ -69,5 +69,11 @@ void loop() {
 
   // Random wait between minWait and maxWait
   long waitTime = random(minWait, maxWait + 1); 
-  delay(waitTime);
+
+  // Continuous Serial Output: Print status while waiting
+  unsigned long waitStart = millis();
+  while (millis() - waitStart < waitTime) {
+    Serial.println(currentPos);
+    delay(100); 
+  }
 }
