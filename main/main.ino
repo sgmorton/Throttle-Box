@@ -10,8 +10,8 @@ int minPulse = 800; // Minimum pulse width (microseconds)
 int maxPulse = 1300; // Maximum pulse width (microseconds)
 
 //wait time between moves, a random time will be chosen between these two numbers
-int minWait = 8000;  // Minimum wait time (milliseconds)
-int maxWait = 25000; // Maximum wait time (milliseconds)
+int minWait = 4000;  // Minimum wait time (milliseconds)
+int maxWait = 15000; // Maximum wait time (milliseconds)
 
 int moveDuration = 1000; // Time taken for each move (milliseconds)
 
